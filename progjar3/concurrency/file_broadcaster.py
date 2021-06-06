@@ -3,11 +3,9 @@ import socket
 CHUNK_SIZE = 1024
 
 def broadcast_config():
-    return [{'ip_address':'192.168.0.1'},
-    {'ip_address':'192.168.0.1'},
-    {'ip_address':'192.168.0.1'},
-    {'ip_address':'192.168.0.1'},
-    {'ip_address':'192.168.0.1'},]
+    return [{'ip_address':'192.168.122.91'},
+    {'ip_address':'192.168.122.66'},
+    {'ip_address':'192.168.122.103'}]
 
 def broadcast_file(ip, port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
